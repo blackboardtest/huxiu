@@ -1,0 +1,21 @@
+{
+  "version": "0.0.1",
+  "name": "虎嗅",
+  "description": "虎嗅",
+  "keywords": [
+    "科技"
+  ],
+  "interval": 10,
+  "author": {
+    "name": "vimrus",
+    "email": "vimrus.com@gmail.com",
+    "url": "https://github.com/vimrus"
+  },
+  "style": "title-image",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vimrus/huxiu"
+  },
+  "bugs": "https://github.com/vimrus/huxiu/issues",
+  "main": "index.js"
+}
