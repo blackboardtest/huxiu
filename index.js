@@ -2,10 +2,10 @@ hubble.getXML('https://www.huxiu.com/rss/0.xml', function (error, response, $) {
 	$('item').each(function (index, value) {
 
 		var url = $(this).find('link').text();
-		var key = url.substring(url.lastIndexOf('/') + 1, url.lastIndexOf('.html'));
+		var id = url.substring(url.lastIndexOf('/') + 1, url.lastIndexOf('.html'));
 		var dom = $(this);
 
-		articles.get('key', key, function (article) {
+		articles.get('id', id, function (article) {
 			if (article) {
 				return;
 			}
@@ -17,7 +17,7 @@ hubble.getXML('https://www.huxiu.com/rss/0.xml', function (error, response, $) {
 			var image = $('img').eq(0).attr('src');
 
 			var article = {
-				key: key,
+				id: id,
 				title: title,
 				content: content,
 				summary: summary,
